@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public GameObject checkPoint;
     public string sceneName;
 
+    private bool _isGameOver;
+
     private void Awake() {
         instance = this;
     }
@@ -28,5 +30,10 @@ public class GameManager : MonoBehaviour
     public void OnSceneUpdate()
     {
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void GameOver()
+    {
+        _isGameOver = true;
     }
 }
