@@ -24,6 +24,9 @@ public class EnemyBehavior : MonoBehaviour
     [SerializeField]
     private float _pursuitSpeed = 3.0f;
 
+    [SerializeField]
+    private float _rotateSpeed = 20;
+
 
 
     void Start()
@@ -60,7 +63,12 @@ public class EnemyBehavior : MonoBehaviour
         {
             Vector3 direction = transform.position - _player.transform.position;
             direction = direction.normalized;
+
+            //Pursues the Player
             transform.position -= direction * Time.deltaTime * _pursuitSpeed;
+
+            //Faces the Player
+            transform.forward -= direction * Time.deltaTime * _rotateSpeed;
         }
     }
 
@@ -80,28 +88,6 @@ public class EnemyBehavior : MonoBehaviour
 
     private void EnemyRecoil()
     {
-        //Vector3 randomRecoil = new Vector3(Random.Range(-5f, 5f),0, 0);
-
-        int randomRecoil = Random.Range(0, 4);
-
-        switch (randomRecoil)
-        {
-            case 0:
-                transform.position += (Vector3.forward * 75) * Time.deltaTime;
-                break;
-            case 1:
-                transform.position += (Vector3.back * 75) * Time.deltaTime;
-                break;
-            case 2:
-                transform.position += (Vector3.right * 75) * Time.deltaTime;
-                break;
-            case 3:
-                transform.position += (Vector3.left * 75) * Time.deltaTime;
-                break;
-            default:
-                break;
-
-        }
-
+        transform.position += (Vector3.back * 75) * Time.deltaTime;
     }
 }
