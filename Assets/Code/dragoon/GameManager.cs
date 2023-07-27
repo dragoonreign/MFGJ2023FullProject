@@ -39,4 +39,10 @@ public class GameManager : MonoBehaviour
     {
         _isGameOver = true;
     }
+
+    public void DoResetLevel()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+    }
 }

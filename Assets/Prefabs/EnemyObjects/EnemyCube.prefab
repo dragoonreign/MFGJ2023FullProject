@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1722438803272828251}
   - component: {fileID: 318718052382881564}
   - component: {fileID: 5541800719391044911}
+  - component: {fileID: 7763490556599008646}
   m_Layer: 0
   m_Name: EnemyCube
   m_TagString: Enemy
@@ -121,3 +122,20 @@ MonoBehaviour:
   _player: {fileID: 0}
   _pursuitRange: 3
   _pursuitSpeed: 3
+  _rotateSpeed: 20
+--- !u!114 &7763490556599008646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67075621845679552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fb5b87acf0db74f804aea7e387c3ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _PlatformType: 0
+  waypoints: []
+  waypointsGO: {fileID: 0}
+  speed: 1.5

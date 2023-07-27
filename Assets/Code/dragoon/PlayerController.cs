@@ -47,6 +47,11 @@ public class PlayerController : MonoBehaviour
         GatherInput();
         JumpCooldown();
         OnGrounded();
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            GameManager.instance.DoResetLevel();
+        }
     }
 
     private void FixedUpdate() {
