@@ -754,12 +754,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b06deba727b5585439e2e44228c3db8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1720890432 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2895613590625809339, guid: 85ecf49e597c70149b2f5ba212916816,
-    type: 3}
-  m_PrefabInstance: {fileID: 309773035617375152}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1745214286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -967,21 +961,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCube
       objectReference: {fileID: 0}
-    - target: {fileID: 67075621845679552, guid: 85ecf49e597c70149b2f5ba212916816,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 67075621845679552, guid: 85ecf49e597c70149b2f5ba212916816,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 318718052382881564, guid: 85ecf49e597c70149b2f5ba212916816,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2895613590625809339, guid: 85ecf49e597c70149b2f5ba212916816,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1037,26 +1016,6 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 1178088964}
-    - target: {fileID: 5541800719391044911, guid: 85ecf49e597c70149b2f5ba212916816,
-        type: 3}
-      propertyPath: _pursuitRange
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5541800719391044911, guid: 85ecf49e597c70149b2f5ba212916816,
-        type: 3}
-      propertyPath: wayPoints.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5541800719391044911, guid: 85ecf49e597c70149b2f5ba212916816,
-        type: 3}
-      propertyPath: wayPoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 1720890432}
-    - target: {fileID: 5541800719391044911, guid: 85ecf49e597c70149b2f5ba212916816,
-        type: 3}
-      propertyPath: wayPoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

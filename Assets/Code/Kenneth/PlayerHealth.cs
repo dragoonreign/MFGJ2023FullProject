@@ -25,10 +25,6 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
-    public void HealthManager()
-    {
-
-    }
 
     public void Damage()
     {
@@ -42,5 +38,10 @@ public class PlayerHealth : MonoBehaviour
             Destroy(gameObject);
             //_gameManager.GameOver();
         }
+    }
+
+    public void PlayerRespawn()
+    {
+
     }
 }

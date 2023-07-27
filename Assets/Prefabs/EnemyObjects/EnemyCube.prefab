@@ -15,10 +15,10 @@ GameObject:
   - component: {fileID: 5541800719391044911}
   m_Layer: 0
   m_Name: EnemyCube
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2895613590625809339
 Transform:
@@ -100,7 +100,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -118,7 +118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89887b2f8ea8e7f46a106127f700ef6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wayPoints: []
   _player: {fileID: 0}
   _pursuitRange: 3
   _pursuitSpeed: 3
