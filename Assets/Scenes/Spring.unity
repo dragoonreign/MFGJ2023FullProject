@@ -1165,8 +1165,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9104863060154912295, guid: 35646e683c1374648abeff9a3735cc9d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7930532102824222016}
   m_SourcePrefab: {fileID: 100100000, guid: 35646e683c1374648abeff9a3735cc9d, type: 3}
+--- !u!1 &7930532102824222015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9104863060154912295, guid: 35646e683c1374648abeff9a3735cc9d,
+    type: 3}
+  m_PrefabInstance: {fileID: 7930532102824222014}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7930532102824222016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7930532102824222015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269f77dffa44947499a42bf77b8ee9b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeRemaining: 150
+  _temperature: 7000
+  timeText: {fileID: 2085945126}
+  _directionalLight: {fileID: 1874656093}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
