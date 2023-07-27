@@ -27,6 +27,8 @@ public class EnemyBehavior : MonoBehaviour
     [SerializeField]
     private float _rotateSpeed = 20;
 
+    [SerializeField]
+    private EnemyAI enemyAI;
 
 
     void Start()
@@ -57,6 +59,7 @@ public class EnemyBehavior : MonoBehaviour
         if (_player != null)
         {
             _distance = Vector3.Distance(_player.transform.position, transform.position);
+            StartEnemyWayPoint();
         }
 
         if (_distance <= _pursuitRange && _player != null)
@@ -69,6 +72,9 @@ public class EnemyBehavior : MonoBehaviour
 
             //Faces the Player
             transform.forward -= direction * Time.deltaTime * _rotateSpeed;
+
+            //stops waypoint movement behavior
+            StopEnemyWayPoint();
         }
     }
 
@@ -90,5 +96,15 @@ public class EnemyBehavior : MonoBehaviour
     private void EnemyRecoil()
     {
         transform.position += (Vector3.back * 75) * Time.deltaTime;
+    }
+
+    void StopEnemyWayPoint()
+    {
+        enemyAI.enabled = false;
+    }
+
+    void StartEnemyWayPoint()
+    {
+        enemyAI.enabled = true;
     }
 }
