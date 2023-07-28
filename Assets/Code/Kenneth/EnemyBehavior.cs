@@ -95,18 +95,6 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
 
-    //private void EnemyRecoil()
-    //{
-    //    //_canAttack = Time.time + _attackRate;
-    //    _enemyCollided = true;
-    //    transform.position += (Vector3.back * 75) * Time.deltaTime;
-
-    //    if (_enemyCollided == true)
-    //    {
-    //        Invoke("EnemyPursuit", 1.0f);
-    //        _enemyCollided = false;
-    //    }
-    //}
 
     IEnumerator RecoilCooldown()
     {
