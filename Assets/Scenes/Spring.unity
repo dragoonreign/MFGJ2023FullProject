@@ -964,13 +964,18 @@ PrefabInstance:
     - target: {fileID: 2014412078082115488, guid: 5d5e977abecb1ba408e9019c57734d0d,
         type: 3}
       propertyPath: _timeRemaining
-      value: 70
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2014412078082115488, guid: 5d5e977abecb1ba408e9019c57734d0d,
         type: 3}
       propertyPath: _directionalLight
       value: 
       objectReference: {fileID: 1874656093}
+    - target: {fileID: 3920781018050007813, guid: 5d5e977abecb1ba408e9019c57734d0d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3.5999756
+      objectReference: {fileID: 0}
     - target: {fileID: 6389620181623360425, guid: 5d5e977abecb1ba408e9019c57734d0d,
         type: 3}
       propertyPath: m_LocalPosition.x
