@@ -37,6 +37,7 @@ public class EnemyBehavior : MonoBehaviour
     [SerializeField]
     private EnemyAI enemyAI;
 
+    public float sSpeed = 1;
 
     void Start()
     {
@@ -52,6 +53,9 @@ public class EnemyBehavior : MonoBehaviour
         {
             StopCoroutine(RecoilCooldown());
         }
+
+        RotateAIModelToWaypoint();
+
     }
 
     //Enemy Pursues the Player when in Range
@@ -95,7 +99,6 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
 
-
     IEnumerator RecoilCooldown()
     {
         _enemyCollided = true;
@@ -115,5 +118,15 @@ public class EnemyBehavior : MonoBehaviour
     void StartEnemyWayPoint()
     {
         enemyAI.enabled = true;
+    }
+
+    public void RotateAIModelToWaypoint()
+    {
+        Vector3 lookDirection = enemyAI.target.transform.position - transform.position;
+        lookDirection.Normalize();
+
+        if (lookDirection == Vector3.zero) return;
+
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookDirection), sSpeed * Time.deltaTime);
     }
 }
