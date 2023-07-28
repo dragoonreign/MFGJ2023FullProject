@@ -5,17 +5,13 @@ using UnityEngine;
 
 public class DaylightTimerScript : MonoBehaviour
 {
-    private float _minutes;
-
-    private float _seconds;
+   
 
     [SerializeField]
     private float _timeRemaining = 10;
 
     private bool _timerIsRunning;
 
-    [SerializeField]
-    private float _temperature = 7000;
 
     [SerializeField]
     public TMP_Text timeText;
@@ -23,15 +19,20 @@ public class DaylightTimerScript : MonoBehaviour
     [SerializeField]
     private GameObject _directionalLight;
 
+    
+    public UIManagerScript _uiManager;
+
     void Start()
     {
         _timerIsRunning = true;
+
+        //_player.GetComponent<PlayerHealth>();
     }
 
     void Update()
     {
         RunningTimer();
-        LightingCountdown();
+        //LightingCountdown();
     }
 
     //References the Display of Minutes and Seconds
@@ -50,6 +51,8 @@ public class DaylightTimerScript : MonoBehaviour
     //Makes the Timer decrease every seconds
     private void RunningTimer()
     {
+        
+
         if (_timerIsRunning == true)
         {
             if (_timeRemaining > 0)
@@ -60,27 +63,36 @@ public class DaylightTimerScript : MonoBehaviour
             }
             else
             {
+                PlayerHealth player = GetComponent<PlayerHealth>();
+
+
+
                 Debug.Log("Out of Time Sucka!");
 
                 _timeRemaining = 0;
 
                 _timerIsRunning = false;
+
+                if (_timeRemaining == 0)
+                {
+                    _uiManager.GameOverSequence();
+                }
             }
         }
     }
 
-    //Reduces the Temperature depending on the Timer
-    private void LightingCountdown()
-    {
-        _directionalLight.GetComponent<Light>().colorTemperature = _temperature;
+    ////Reduces the Temperature depending on the Timer
+    //private void LightingCountdown()
+    //{
+    //    _directionalLight.GetComponent<Light>().colorTemperature = _temperature;
 
-        if (_timerIsRunning == true)
-        {
-            _temperature -= 2000f / _timeRemaining * Time.deltaTime;
-        }
-        else
-        {
-            Debug.Log("It is dark");
-        }
-    }
+    //    if (_timerIsRunning == true)
+    //    {
+    //        _temperature -= 2000f / _timeRemaining * Time.deltaTime;
+    //    }
+    //    else
+    //    {
+    //        Debug.Log("It is dark");
+    //    }
+    //}
 }

@@ -262,6 +262,11 @@ PrefabInstance:
       objectReference: {fileID: 2513191910896843911}
     - target: {fileID: 7763490556599008646, guid: 85ecf49e597c70149b2f5ba212916816,
         type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7763490556599008646, guid: 85ecf49e597c70149b2f5ba212916816,
+        type: 3}
       propertyPath: waypointsGO
       value: 
       objectReference: {fileID: 307368239818928721}

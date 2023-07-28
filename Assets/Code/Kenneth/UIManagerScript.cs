@@ -21,69 +21,38 @@ public class UIManagerScript : MonoBehaviour
     [SerializeField]
     private TMP_Text _restart;
 
+    [SerializeField]
+    private GameObject _player;
+
     private GameManager _gameManager;
 
     private bool _restartOptionActive;
 
+    //----Timer Variables-----
+    [SerializeField]
+    private float _timeRemaining = 10;
+
+    private bool _timerIsRunning;
 
     [SerializeField]
-    public Button playButton;
+    public TMP_Text timeText;
 
     [SerializeField]
-    public Button quitButton;
+    private GameObject _directionalLight;
 
-    [SerializeField]
-    public Button springButton;
-
-    [SerializeField]
-    public Button summerButton;
-
-    [SerializeField]
-    public Button fallButton;
-
-    [SerializeField]
-    public Button winterButton;
-
-    
-
+    private bool _playerHasDied;
 
     // Start is called before the first frame update
     void Start()
     {
-        //-------Main Menu Buttons-----------
-
-        //Play Button
-        Button playBtn = playButton.GetComponent<Button>();
-        playBtn.onClick.AddListener(PlayButton);
-
-        //Exit Button
-        Button quitBtn = quitButton.GetComponent<Button>();
-        quitBtn.onClick.AddListener(QuitButton);
-
-        //---------Level Select Buttons--------
-
-        //Spring Level
-        Button springBtn = springButton.GetComponent<Button>();
-        springBtn.onClick.AddListener(SpringLevel);
-
-        //SummerLevel
-        Button summerBtn = summerButton.GetComponent<Button>();
-        summerBtn.onClick.AddListener(SummerLevel);
-
-        //Fall Level
-        Button fallBtn = fallButton.GetComponent<Button>();
-        fallBtn.onClick.AddListener(FallLevel);
-
-        //Winter Level
-        Button winterBtn = winterButton.GetComponent<Button>();
-        winterBtn.onClick.AddListener(WinterLevel);
-
+        _timerIsRunning = true;
+        _playerHasDied = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        RunningTimer();
     }
 
     //Subtracts Health from the UI
@@ -93,18 +62,17 @@ public class UIManagerScript : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            _playerHasDied = true;
             GameOverSequence();
         }
     }
 
-
     //Sequence of events when the player dies
-    private void GameOverSequence()
+    public void GameOverSequence()
     {
         _restartOptionActive = true;
 
         _gameOverText.gameObject.SetActive(true);
-
         _restart.gameObject.SetActive(true);
 
         RestartLevel();
@@ -129,53 +97,97 @@ public class UIManagerScript : MonoBehaviour
     //Restart the Level after Game Over
     private void RestartLevel()
     {
-
         if (Input.GetKeyDown(KeyCode.R) && (_restartOptionActive == true))
         {
             _gameManager.OnSceneUpdate();
-
         }
     }
 
-
     //-----Main Menu-----
 
-    private void PlayButton()
+    public void Play()
     {
-        Debug.Log("Button clicked");
         SceneManager.LoadScene(0);
     }
 
-    private void QuitButton()
+    public void Quit()
     {
-        Debug.Log("Button clicked");
         Application.Quit();
     }
 
 
     //-----Level Select------
 
-    private void SpringLevel()
+    //public void SpringLevel()
+    //{
+    //    Debug.Log("Button clicked");
+    //    SceneManager.LoadScene(1);
+    //}
+
+    //public void SummerLevel()
+    //{
+    //    Debug.Log("Button clicked");
+    //    SceneManager.LoadScene(2);
+    //}
+
+    //public void FallLevel()
+    //{
+    //    Debug.Log("Button clicked");
+    //    SceneManager.LoadScene(3);
+    //}
+
+    //public void WinterLevel()
+    //{
+    //    Debug.Log("Button clicked");
+    //    SceneManager.LoadScene(4);
+    //}
+
+    public void DoLoadLevel(string sceneToLoad)
     {
         Debug.Log("Button clicked");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(sceneToLoad);
     }
 
-    public void SummerLevel()
+    //----------Timer----------
+    
+    //References the Display of Minutes and Seconds
+    private void DisplayTime(float timeToDisplay)
     {
-        Debug.Log("Button clicked");
-        SceneManager.LoadScene(2);
+
+        timeToDisplay += 1;
+
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+
+        timeText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
     }
 
-    public void FallLevel()
+    //Makes the Timer decrease every seconds
+    public void RunningTimer()
     {
-        Debug.Log("Button clicked");
-        SceneManager.LoadScene(3);
-    }
+        if (_timerIsRunning == true)
+        {
+            if (_timeRemaining > 0)
+            {
+                _timeRemaining -= Time.deltaTime;
 
-    public void WinterLevel()
-    {
-        Debug.Log("Button clicked");
-        SceneManager.LoadScene(4);
+                DisplayTime(_timeRemaining);
+            }
+            else
+            {
+                Debug.Log("Out of Time Sucka!");
+
+                _player.gameObject.SetActive(false);
+                _timeRemaining = 0;
+                _timerIsRunning = false;
+                GameOverSequence();
+            }
+        }
+
+        if (_playerHasDied == true)
+        {
+            _timeRemaining += Time.deltaTime;
+        }
     }
 }

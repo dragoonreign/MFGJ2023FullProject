@@ -528,6 +528,10 @@ MonoBehaviour:
   _healthImage: {fileID: 4827473800892137534}
   _gameOverText: {fileID: 5037736603444459710}
   _restart: {fileID: 3242913686264693819}
+  _player: {fileID: 0}
+  _timeRemaining: 5
+  timeText: {fileID: 3765860395227659800}
+  _directionalLight: {fileID: 0}
 --- !u!1 &6374102201125049239
 GameObject:
   m_ObjectHideFlags: 0

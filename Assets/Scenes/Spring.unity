@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f930df25f7000a84792b8ac19073ccfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  health: 3
   _maxHealth: 3
   _uiManager: {fileID: 1688127098}
   _gameManager: {fileID: 0}
@@ -948,18 +948,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &309773035617375154 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2513191910896843911, guid: d26377a7db038044aa8c96f6d98fa889,
-    type: 3}
-  m_PrefabInstance: {fileID: 8202591613099743214}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43fb5b87acf0db74f804aea7e387c3ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5875397515031152379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -968,6 +956,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2014412078082115488, guid: 5d5e977abecb1ba408e9019c57734d0d,
+        type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1132032130}
+    - target: {fileID: 2014412078082115488, guid: 5d5e977abecb1ba408e9019c57734d0d,
+        type: 3}
+      propertyPath: _timeRemaining
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 2014412078082115488, guid: 5d5e977abecb1ba408e9019c57734d0d,
+        type: 3}
+      propertyPath: _directionalLight
+      value: 
+      objectReference: {fileID: 1874656093}
     - target: {fileID: 6389620181623360425, guid: 5d5e977abecb1ba408e9019c57734d0d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1123,15 +1126,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7930532102824222015}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 269f77dffa44947499a42bf77b8ee9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeRemaining: 150
-  _temperature: 7000
+  _timeRemaining: 5
   timeText: {fileID: 2085945126}
   _directionalLight: {fileID: 1874656093}
+  _uiManager: {fileID: 0}
 --- !u!1001 &8202591613099743214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1195,16 +1198,6 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 1178088964}
-    - target: {fileID: 411443131075294254, guid: d26377a7db038044aa8c96f6d98fa889,
-        type: 3}
-      propertyPath: enemyAI
-      value: 
-      objectReference: {fileID: 309773035617375154}
-    - target: {fileID: 2513191910896843911, guid: d26377a7db038044aa8c96f6d98fa889,
-        type: 3}
-      propertyPath: speed
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 8900514932258646634, guid: d26377a7db038044aa8c96f6d98fa889,
         type: 3}
       propertyPath: m_Name

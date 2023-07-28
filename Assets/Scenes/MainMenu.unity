@@ -247,12 +247,6 @@ MonoBehaviour:
   _healthImage: {fileID: 0}
   _gameOverText: {fileID: 0}
   _restart: {fileID: 0}
-  playButton: {fileID: 501887991}
-  quitButton: {fileID: 0}
-  springButton: {fileID: 0}
-  summerButton: {fileID: 0}
-  fallButton: {fileID: 0}
-  winterButton: {fileID: 0}
 --- !u!1 &255615198
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,7 +463,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 306458445}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 75248273}
+        m_TargetAssemblyTypeName: UIManagerScript, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &306458445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,16 +689,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 75248268}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 75248273}
+        m_TargetAssemblyTypeName: UIManagerScript, Assembly-CSharp
+        m_MethodName: DoLoadLevel
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Tutorial
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &501887992

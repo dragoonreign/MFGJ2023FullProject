@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField]
-    private int _health = 3;
+    public int health = 3;
 
     [SerializeField]
     private int _maxHealth = 3;
@@ -13,6 +13,8 @@ public class PlayerHealth : MonoBehaviour
     public UIManagerScript _uiManager;
 
     public GameManager _gameManager;
+
+    private bool _gameIsOver;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,23 +27,17 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
-
     public void Damage()
     {
-        _health--;
+        health--;
 
-        _uiManager.UpdateHealth(_health);
+        _uiManager.UpdateHealth(health);
 
-        if (_health < 1)
+        if (health < 1)
         {
-            //_health = 0;
             Destroy(gameObject);
-            //_gameManager.GameOver();
         }
-    }
-
-    public void PlayerRespawn()
-    {
 
     }
+    
 }
