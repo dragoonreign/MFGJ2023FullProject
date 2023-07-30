@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private PlayerInput playerInput;
     [SerializeField] private InputAction m_jump;
     [SerializeField] private InputAction m_shoot;
+    [SerializeField] private GameObject GunPoint;
+    [SerializeField] private GameObject ModelRotation;
     [SerializeField] private InputAction m_reset;
     [SerializeField] private MyDefaultInputAction myDefaultInputAction;
     public Vector3 _input;
@@ -80,7 +82,16 @@ public class PlayerController : MonoBehaviour
 
     private void DoShoot()
     {
-        Debug.Log("pew pew");
+        GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(ObjectPool.SharedInstance.bulletObjects); 
+		if (bullet != null) {
+			bullet.transform.position = GunPoint.transform.position;
+			bullet.transform.rotation = ModelRotation.transform.rotation;
+			bullet.SetActive(true);
+		}
+		// var bullet = Instantiate(BulletPrefab, GunPoint.transform.position, aimDirection.transform.rotation);
+		bullet.GetComponent<BulletBehavior>().DoShootBullet();
+		// bullet.GetComponent<BulletBehavior>().OnBulletEnabled();
+		// bulletCount--;
     }
 
     void JumpCooldown()

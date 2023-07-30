@@ -9173,8 +9173,9 @@ MonoBehaviour:
   zombieGasPrefab: {fileID: 0}
   zombieGasToPool: 0
   bulletObjects: []
-  bulletPrefab: {fileID: 0}
-  bulletToPool: 0
+  bulletPrefab: {fileID: 4981160916185183881, guid: a69176785cd6aed4080004c720958638,
+    type: 3}
+  bulletToPool: 10
 --- !u!1001 &686923047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28392,6 +28393,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4060171325765253136, guid: 2570394f0702b9549a5e4ed3b95ea2f2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7417753890936782916, guid: 2570394f0702b9549a5e4ed3b95ea2f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28441,26 +28447,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8495359153852067398, guid: 2570394f0702b9549a5e4ed3b95ea2f2,
-        type: 3}
-      propertyPath: m_reset.m_Id
-      value: fdfd3ec9-3d85-4108-9046-6e9211e609c2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8495359153852067398, guid: 2570394f0702b9549a5e4ed3b95ea2f2,
-        type: 3}
-      propertyPath: m_shoot.m_Id
-      value: a41776ab-5bfc-4746-80e6-fa35b6630fa6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8495359153852067398, guid: 2570394f0702b9549a5e4ed3b95ea2f2,
-        type: 3}
-      propertyPath: m_reset.m_Name
-      value: Reset
-      objectReference: {fileID: 0}
-    - target: {fileID: 8495359153852067398, guid: 2570394f0702b9549a5e4ed3b95ea2f2,
-        type: 3}
-      propertyPath: m_shoot.m_Name
-      value: Shoot
       objectReference: {fileID: 0}
     - target: {fileID: 8869549333541823477, guid: 2570394f0702b9549a5e4ed3b95ea2f2,
         type: 3}
