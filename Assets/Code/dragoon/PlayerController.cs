@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float retainSpeedPercentage = .98f;
     [SerializeField] private PlayerInput playerInput;
     [SerializeField] private InputAction m_jump;
+    [SerializeField] private InputAction m_shoot;
+    [SerializeField] private InputAction m_reset;
     [SerializeField] private MyDefaultInputAction myDefaultInputAction;
     public Vector3 _input;
     public GameObject groundDetector;
@@ -35,7 +37,11 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable() {
         m_jump = myDefaultInputAction.Player.Jump;
+        m_shoot = myDefaultInputAction.Player.Shoot;
+        m_reset = myDefaultInputAction.Player.Reset;
         m_jump.Enable();
+        m_shoot.Enable();
+        m_reset.Enable();
 
         myDefaultInputAction.Player.Jump.performed += DoJump;
         myDefaultInputAction.Player.Jump.Enable();
@@ -48,7 +54,12 @@ public class PlayerController : MonoBehaviour
         JumpCooldown();
         OnGrounded();
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (m_shoot.WasPerformedThisFrame())
+        {
+            DoShoot();
+        }
+
+        if (m_reset.WasPerformedThisFrame())
         {
             GameManager.instance.DoResetLevel();
         }
@@ -65,6 +76,11 @@ public class PlayerController : MonoBehaviour
     private void DoJump(InputAction.CallbackContext context)
     {
         Jump(context);
+    }
+
+    private void DoShoot()
+    {
+        Debug.Log("pew pew");
     }
 
     void JumpCooldown()
