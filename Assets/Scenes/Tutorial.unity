@@ -23232,37 +23232,6 @@ Transform:
   - {fileID: 1524438435}
   m_Father: {fileID: 1498476409}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1799453189
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1799453190}
-  m_Layer: 0
-  m_Name: CP1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1799453190
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1799453189}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1799546673
 GameObject:
   m_ObjectHideFlags: 0
@@ -28496,16 +28465,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 2096268153244715767, guid: 621476b815369e34c84c46558d59d772,
-        type: 3}
-      propertyPath: sceneName
-      value: Spring
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096268153244715767, guid: 621476b815369e34c84c46558d59d772,
-        type: 3}
-      propertyPath: checkPoint
-      value: 
-      objectReference: {fileID: 1799453189}
     - target: {fileID: 4425067198328427591, guid: 621476b815369e34c84c46558d59d772,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28693,7 +28652,6 @@ SceneRoots:
   - {fileID: 1263616015150218532}
   - {fileID: 6723782554639176793}
   - {fileID: 1211968446}
-  - {fileID: 1799453190}
   - {fileID: 890231142}
   - {fileID: 1779631027}
   - {fileID: 1409260830}
