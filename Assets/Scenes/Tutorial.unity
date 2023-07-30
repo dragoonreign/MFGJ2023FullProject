@@ -7423,6 +7423,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2446324742315666118, guid: 8a17912c96e6ea14d9692293922f9ff1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2446324742315666118, guid: 8a17912c96e6ea14d9692293922f9ff1,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 14f8f5eac754e03478e4e02d22f36b9f,
+        type: 2}
+    - target: {fileID: 3859862618178789991, guid: 8a17912c96e6ea14d9692293922f9ff1,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 14f8f5eac754e03478e4e02d22f36b9f,
+        type: 2}
     - target: {fileID: 4326147055217705265, guid: 8a17912c96e6ea14d9692293922f9ff1,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
