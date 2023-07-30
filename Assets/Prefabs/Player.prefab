@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8020955450376022030}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GunPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 5158189674636864183}
   - component: {fileID: 2322399578291462805}
   - component: {fileID: 5970495895500658561}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sunglass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 2238311520526523026}
   - component: {fileID: 8869549333541823477}
   - component: {fileID: 3133883998899183392}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -444,7 +444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 995012529716550606}
   - component: {fileID: 5912431775533854703}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GroundDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3513906725722832354}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Feet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -525,7 +525,7 @@ GameObject:
   - component: {fileID: 4919270914598396970}
   - component: {fileID: 7181883487448334257}
   - component: {fileID: 6554307365784850451}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -607,7 +607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7741371802227451911}
   - component: {fileID: 7039104730873693851}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -656,7 +656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7472795490135620453}
   - component: {fileID: 1417383313106732024}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}

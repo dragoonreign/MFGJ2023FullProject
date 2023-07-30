@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4906605318328428807}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BulletModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 7426579355687322391}
   - component: {fileID: 7413227283369004766}
   - component: {fileID: 1411472047808696711}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 1255261481615388875}
   - component: {fileID: 4573247970118108188}
   - component: {fileID: 4058645807707108559}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
