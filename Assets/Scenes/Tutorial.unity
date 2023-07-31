@@ -18965,6 +18965,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: key
       objectReference: {fileID: 0}
+    - target: {fileID: 66360777623656990, guid: 725404c1ac03bd149abc5dc1e279e66a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 531842276857123299, guid: 725404c1ac03bd149abc5dc1e279e66a,
         type: 3}
       propertyPath: m_RootOrder
@@ -20353,6 +20358,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: key
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036318129747198074, guid: d97f2e96157378c48938d838c40cab52,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
