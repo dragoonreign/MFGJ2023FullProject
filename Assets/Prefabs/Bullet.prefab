@@ -185,7 +185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   rb: {fileID: 4058645807707108559}
-  cooldown: 3
+  cooldown: 1
   bulletTrail: {fileID: 0}
 --- !u!54 &4058645807707108559
 Rigidbody:

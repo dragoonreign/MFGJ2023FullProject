@@ -6275,7 +6275,7 @@ PrefabInstance:
     - target: {fileID: 301720954125463492, guid: 6075784132341494e9f7899cee274523,
         type: 3}
       propertyPath: nextSceneName
-      value: Summer
+      value: Spring
       objectReference: {fileID: 0}
     - target: {fileID: 3777870420094516422, guid: 6075784132341494e9f7899cee274523,
         type: 3}

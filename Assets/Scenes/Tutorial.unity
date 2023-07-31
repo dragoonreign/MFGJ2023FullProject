@@ -28090,6 +28090,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 641136251}
     m_Modifications:
+    - target: {fileID: 301720954125463492, guid: 6075784132341494e9f7899cee274523,
+        type: 3}
+      propertyPath: nextSceneName
+      value: LD Test
+      objectReference: {fileID: 0}
     - target: {fileID: 3777870420094516422, guid: 6075784132341494e9f7899cee274523,
         type: 3}
       propertyPath: m_LocalPosition.x
