@@ -8,6 +8,7 @@ public class BulletBehavior : MonoBehaviour
     public Rigidbody rb;
     public float cooldown;
     public GameObject bulletTrail;
+    public UIManagerScript _UIManagerScript;
 
     public void DoShootBullet()
     {
@@ -32,31 +33,33 @@ public class BulletBehavior : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
         //change tag names to something else.
 
+        if (transform.gameObject.name == "Bullet(Clone)")
+        {
+            if (other.transform.gameObject.tag == "Enemy")
+            {
+                other.transform.gameObject.SetActive(false);
+            }
+        }
 
-        // if  (other.transform.gameObject.tag == "Zombie")
-        // {
-        //     Debug.Log("Zombie");
-        //     other.transform.gameObject.SetActive(false);
-        //     GameManager.instance.DoDefeatedEnemiesUIUpdate();
-        // }
-        // if  (other.transform.gameObject.tag == "ZombieSpecial")
-        // {
-        //     Debug.Log("ZombieSpecial");
-        //     other.transform.gameObject.SetActive(false);
-        //     GameManager.instance.DoDefeatedEnemiesUIUpdate();
-        // }
-        // if  (other.transform.gameObject.tag == "Wall")
-        // {
-        //     Debug.Log("Wall");
-        //     wallCounter++;
-        //     GetComponent<AudioSource>().Play();
-        //     if (wallCounter >= 3)
-        //     {
-        //         transform.gameObject.SetActive(false);
-        //         bulletTrail.SetActive(false);
-        //         wallCounter = 0;
-        //     }
-        //     GameManager.instance.cinemachineShake.ShakeCamera(0.5f, 0.05f);
-        // }
+        if (transform.gameObject.name == "EnemyBullet(Clone)")
+        {
+            if (other.transform.gameObject.tag == "Player")
+            {
+                _UIManagerScript.UpdateHealth(1);
+                other.transform.gameObject.SetActive(false);
+            }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        //change tag names to something else.
+
+        if (transform.gameObject.name == "Bullet(Clone)")
+        {
+            if (other.transform.gameObject.tag == "Enemy")
+            {
+                other.transform.gameObject.SetActive(false);
+            }
+        }
     }
 }
