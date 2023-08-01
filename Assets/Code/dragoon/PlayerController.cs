@@ -50,7 +50,8 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Update() {
-        Time.timeScale = 0.5f;
+        if (!_rb) return;
+        if (!playerInput) return;
 
         GatherInput();
         JumpCooldown();
@@ -77,12 +78,15 @@ public class PlayerController : MonoBehaviour
 
     private void DoJump(InputAction.CallbackContext context)
     {
+        if (!_rb) return;
         Jump(context);
     }
 
     private void DoShoot()
     {
+        if (!_rb) return;
         GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(ObjectPool.SharedInstance.bulletObjects); 
+        if (!bullet) return;
 		if (bullet != null) {
 			bullet.transform.position = GunPoint.transform.position;
 			bullet.transform.rotation = ModelRotation.transform.rotation;
