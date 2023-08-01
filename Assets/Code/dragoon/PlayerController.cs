@@ -50,8 +50,6 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Update() {
-        Time.timeScale = 0.5f;
-
         GatherInput();
         JumpCooldown();
         OnGrounded();
