@@ -94,9 +94,6 @@ public class PlayerBehindMesh : MonoBehaviour
                 //Update mesh alpha.
                 // DoFadeColor();
 
-                //what is this line of code?
-                hitObject = hit.transform.gameObject.GetComponent<MeshRenderer>();
-
                 //Add new key if dictionary doesnt have it.
                 if (!enableMeshDictionary.ContainsKey(hit.transform.gameObject.name))
                 {
@@ -134,12 +131,16 @@ public class PlayerBehindMesh : MonoBehaviour
 
     void DoEnableMesh(Transform transform)
     {
-        transform.gameObject.GetComponent<MeshRenderer>().enabled = true;
+        if (transform.gameObject.GetComponent<MeshRenderer>()) {
+            transform.gameObject.GetComponent<MeshRenderer>().enabled = true;
+        }
     }
 
     void DoDisableMesh(Transform transform)
     {
-        transform.gameObject.GetComponent<MeshRenderer>().enabled = false;
+        if (transform.gameObject.GetComponent<MeshRenderer>()) {
+            transform.gameObject.GetComponent<MeshRenderer>().enabled = false;
+        }
     }
 
     void DoFadeColor()

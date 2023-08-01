@@ -41,6 +41,7 @@ public class EnemyBehavior : MonoBehaviour
 
     void Start()
     {
+        if (enemyAI) return;
         _player = GameObject.Find("Player").GetComponent<PlayerHealth>();
         _enemyCollided = false;
     }
