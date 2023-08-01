@@ -275,7 +275,7 @@ PrefabInstance:
     - target: {fileID: 4886082267183028647, guid: 5a29305377f7c434c950b5ac5cac13ce,
         type: 3}
       propertyPath: m_Lens.NearClipPlane
-      value: 0.01
+      value: -1000
       objectReference: {fileID: 0}
     - target: {fileID: 5771269048906575371, guid: 5a29305377f7c434c950b5ac5cac13ce,
         type: 3}
@@ -540,9 +540,9 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: f7ca7d32a758c9b4898fff192a7ce5b7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.29
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -878,7 +878,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.01
+  near clip plane: -1000
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -1297,16 +1297,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1144008918896180585, guid: 5d5e977abecb1ba408e9019c57734d0d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 6.079956
-      objectReference: {fileID: 0}
-    - target: {fileID: 1144008918896180585, guid: 5d5e977abecb1ba408e9019c57734d0d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -12.400024
-      objectReference: {fileID: 0}
     - target: {fileID: 2014412078082115488, guid: 5d5e977abecb1ba408e9019c57734d0d,
         type: 3}
       propertyPath: _player
@@ -1317,11 +1307,6 @@ PrefabInstance:
       propertyPath: _directionalLight
       value: 
       objectReference: {fileID: 1874656093}
-    - target: {fileID: 4234866045736165443, guid: 5d5e977abecb1ba408e9019c57734d0d,
-        type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6389620181623360425, guid: 5d5e977abecb1ba408e9019c57734d0d,
         type: 3}
       propertyPath: m_LocalPosition.x

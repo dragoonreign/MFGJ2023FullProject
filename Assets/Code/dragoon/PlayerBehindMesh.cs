@@ -86,7 +86,7 @@ public class PlayerBehindMesh : MonoBehaviour
             if (hit.collider.tag != "Player" && hit.collider.tag == "Block")
             {
                 //Update mesh alpha.
-                UpdateColor();
+                // UpdateColor();
 
                 //Disable mesh
                 DoDisableMesh(hit.transform);

@@ -763,9 +763,9 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: f7ca7d32a758c9b4898fff192a7ce5b7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.29
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -13866,12 +13866,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1114726164}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1114726166 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4060171325765253136, guid: 2570394f0702b9549a5e4ed3b95ea2f2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1114726164}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1118793891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14246,21 +14240,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2014412078082115488, guid: 5d5e977abecb1ba408e9019c57734d0d,
-        type: 3}
-      propertyPath: _player
-      value: 
-      objectReference: {fileID: 1114726166}
-    - target: {fileID: 2014412078082115488, guid: 5d5e977abecb1ba408e9019c57734d0d,
-        type: 3}
-      propertyPath: _timeRemaining
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 3920781018050007813, guid: 5d5e977abecb1ba408e9019c57734d0d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 3.5999756
-      objectReference: {fileID: 0}
     - target: {fileID: 6389620181623360425, guid: 5d5e977abecb1ba408e9019c57734d0d,
         type: 3}
       propertyPath: m_LocalPosition.x

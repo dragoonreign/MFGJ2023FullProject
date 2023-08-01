@@ -50,6 +50,9 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Update() {
+        if (!_rb) return;
+        if (!playerInput) return;
+
         GatherInput();
         JumpCooldown();
         OnGrounded();
@@ -81,6 +84,7 @@ public class PlayerController : MonoBehaviour
     private void DoShoot()
     {
         GameObject bullet = ObjectPool.SharedInstance.GetPooledObject(ObjectPool.SharedInstance.bulletObjects); 
+        if (!bullet) return;
 		if (bullet != null) {
 			bullet.transform.position = GunPoint.transform.position;
 			bullet.transform.rotation = ModelRotation.transform.rotation;
