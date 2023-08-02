@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/OpeningCutscene.unity
+    guid: 382db2e088075684a9478522dfb02517
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 98f4b70cab82c884a83c0cbbe721e534
   - enabled: 1
@@ -21,15 +24,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Summer.unity
     guid: e5946751d7615f94188eff36e76dc1d3
   - enabled: 1
-    path: Assets/Scenes/Fall.unity
+    path: Assets/Scenes/Archived/Fall.unity
     guid: 2a01761fdc66db749b8501e3c5f471bc
   - enabled: 1
-    path: Assets/Scenes/Winter.unity
+    path: Assets/Scenes/KeekSummerStage.unity
+    guid: abb8dbb68bff6db4cb530491a6fdbce1
+  - enabled: 1
+    path: Assets/Scenes/Archived/Winter.unity
     guid: 4ee9a203ac3130b4daa0c02759aeb1ef
+  - enabled: 1
+    path: Assets/Scenes/LD Test.unity
+    guid: db6cd82d4a555df4fb0ff55cad94d903
   - enabled: 1
     path: Assets/Scenes/Zoo.unity
     guid: 103fb551f0a5b0c49a7e08b50fc62cb4
   - enabled: 1
-    path: Assets/Scenes/LD Test.unity
-    guid: db6cd82d4a555df4fb0ff55cad94d903
+    path: Assets/Scenes/EndingCutscene.unity
+    guid: c4926d7ba7fabb24b984f650c8c6d432
+  - enabled: 1
+    path: Assets/Scenes/Archived/EndingScene.unity
+    guid: a6b44243e9b227b4baa5137b05061537
   m_configObjects: {}

@@ -30,7 +30,6 @@ public class GameManager : MonoBehaviour
 
     public void OnSceneUpdate()
     {
-        Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(sceneName);
     }
 
