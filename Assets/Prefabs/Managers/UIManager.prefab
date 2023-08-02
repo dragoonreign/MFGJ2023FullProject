@@ -531,7 +531,7 @@ MonoBehaviour:
   _gameOverText: {fileID: 5037736603444459710}
   _restart: {fileID: 3242913686264693819}
   _player: {fileID: 0}
-  _timeRemaining: 60
+  _timeRemaining: 300
   timeText: {fileID: 3765860395227659800}
   _directionalLight: {fileID: 0}
 --- !u!1 &2424479459840213441
