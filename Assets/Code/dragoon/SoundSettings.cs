@@ -30,13 +30,13 @@ public class SoundSettings : MonoBehaviour
     public void SetBGMSound(float soundLevel)
     {
         DoClampSound(soundLevel);
-        DoMusicExposedValueSetFloat("bgmVol", soundLevel);
+        DoMusicExposedValueSetFloat("MusicVolume", soundLevel);
     }
 
     public void SetSFXSound(float soundLevel)
     {
         DoClampSound(soundLevel);
-        DoMusicExposedValueSetFloat("sfxVol", soundLevel);
+        DoMusicExposedValueSetFloat("SFXVolume", soundLevel);
     }
 
     public void DoClampSound(float soundLevel)
