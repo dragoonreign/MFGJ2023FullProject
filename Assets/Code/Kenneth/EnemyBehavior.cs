@@ -41,7 +41,6 @@ public class EnemyBehavior : MonoBehaviour
 
     void Start()
     {
-        if (enemyAI) return;
         _player = GameObject.Find("Player").GetComponent<PlayerHealth>();
         _enemyCollided = false;
     }
@@ -55,10 +54,7 @@ public class EnemyBehavior : MonoBehaviour
             StopCoroutine(RecoilCooldown());
         }
 
-        if (_distance > _pursuitRange)
-        {
-            RotateAIModelToWaypoint(enemyAI.target);
-        }
+        RotateAIModelToWaypoint();
 
     }
 
@@ -66,16 +62,12 @@ public class EnemyBehavior : MonoBehaviour
 
     private void EnemyPursuit()
     {
-        //when the player is outside of pursuit distance
         if (_player != null && _enemyCollided == false)
         {
             _distance = Vector3.Distance(_player.transform.position, transform.position);
-
-            // start or return to waypoint movement behavior
             StartEnemyWayPoint();
         }
 
-        //when the player is within pursuit distance
         if (_distance <= _pursuitRange && _player != null && _enemyCollided == false)
         {
             Vector3 direction = transform.position - _player.transform.position;
@@ -85,8 +77,7 @@ public class EnemyBehavior : MonoBehaviour
             transform.position -= direction * Time.deltaTime * _pursuitSpeed;
 
             //Faces the Player
-            // transform.forward -= direction * Time.deltaTime * _rotateSpeed;
-            RotateAIModelToWaypoint(enemyAI.playerTarget);
+            transform.forward -= direction * Time.deltaTime * _rotateSpeed;
 
             //stops waypoint movement behavior
             StopEnemyWayPoint();
@@ -129,9 +120,9 @@ public class EnemyBehavior : MonoBehaviour
         enemyAI.enabled = true;
     }
 
-    public void RotateAIModelToWaypoint(Transform target)
+    public void RotateAIModelToWaypoint()
     {
-        Vector3 lookDirection = new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z) - transform.position;
+        Vector3 lookDirection = enemyAI.target.transform.position - transform.position;
         lookDirection.Normalize();
 
         if (lookDirection == Vector3.zero) return;

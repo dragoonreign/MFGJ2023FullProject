@@ -86,13 +86,16 @@ public class PlayerBehindMesh : MonoBehaviour
             if (hit.collider.tag != "Player" && hit.collider.tag == "Block")
             {
                 //Update mesh alpha.
-                // UpdateColor();
+                UpdateColor();
 
                 //Disable mesh
                 DoDisableMesh(hit.transform);
 
                 //Update mesh alpha.
                 // DoFadeColor();
+
+                //what is this line of code?
+                hitObject = hit.transform.gameObject.GetComponent<MeshRenderer>();
 
                 //Add new key if dictionary doesnt have it.
                 if (!enableMeshDictionary.ContainsKey(hit.transform.gameObject.name))
@@ -131,16 +134,12 @@ public class PlayerBehindMesh : MonoBehaviour
 
     void DoEnableMesh(Transform transform)
     {
-        if (transform.gameObject.GetComponent<MeshRenderer>()) {
-            transform.gameObject.GetComponent<MeshRenderer>().enabled = true;
-        }
+        transform.gameObject.GetComponent<MeshRenderer>().enabled = true;
     }
 
     void DoDisableMesh(Transform transform)
     {
-        if (transform.gameObject.GetComponent<MeshRenderer>()) {
-            transform.gameObject.GetComponent<MeshRenderer>().enabled = false;
-        }
+        transform.gameObject.GetComponent<MeshRenderer>().enabled = false;
     }
 
     void DoFadeColor()

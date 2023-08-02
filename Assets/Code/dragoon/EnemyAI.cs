@@ -12,8 +12,7 @@ public class EnemyAI : MonoBehaviour
     [HideInInspector]
     public List<Transform> waypoints;
     public GameObject waypointsGO;
-    public Transform target;            //waypoint as target
-    public Transform playerTarget;      //player as target
+    public Transform target;
     private int i = 0;
     public float speed;
     float step;

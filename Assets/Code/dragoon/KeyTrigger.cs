@@ -16,12 +16,9 @@ public class KeyTrigger : MonoBehaviour
         if (other.tag == "Player")
         {
             audioSource.Play();
-            if (m_LevelToActive)
-            {
-                m_LevelToActive.SetActive(true);
-            }
-            m_KeyModel.transform.gameObject.GetComponent<Renderer>().enabled = false;
-            m_KeyModel.transform.gameObject.GetComponent<SphereCollider>().enabled = false;
+            m_LevelToActive.SetActive(true);
+            transform.gameObject.GetComponent<Renderer>().enabled = false;
+            transform.gameObject.GetComponent<SphereCollider>().enabled = false;
             GameManager.instance.checkPoint.transform.position = transform.position;
         }
     }
