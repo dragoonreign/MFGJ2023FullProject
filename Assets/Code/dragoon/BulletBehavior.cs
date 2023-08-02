@@ -45,8 +45,10 @@ public class BulletBehavior : MonoBehaviour
         {
             if (other.transform.gameObject.tag == "Player")
             {
+                Debug.Log("Hit");
+                transform.gameObject.SetActive(false);
+                transform.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
                 _UIManagerScript.UpdateHealth(1);
-                other.transform.gameObject.SetActive(false);
             }
         }
     }
@@ -54,11 +56,20 @@ public class BulletBehavior : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         //change tag names to something else.
 
-        if (transform.gameObject.name == "Bullet(Clone)")
+        if (transform.gameObject.tag == "Bullet(Clone)")
         {
             if (other.transform.gameObject.tag == "Enemy")
             {
                 other.transform.gameObject.SetActive(false);
+            }
+        }
+
+        if (transform.gameObject.tag == "EnemyBullet(Clone)")
+        {
+            if (other.transform.gameObject.tag == "Player")
+            {
+                Debug.Log("Hit");
+                // other.transform.gameObject.SetActive(false);
             }
         }
     }
