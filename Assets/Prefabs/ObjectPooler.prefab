@@ -44,18 +44,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f616e79839580a5438dd8f176ed46647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombieObjects: []
+  Object1: []
   zombiePrefab: {fileID: 0}
   zombieToPool: 0
-  zombieEMPObjects: []
+  Object2: []
   zombieEMPPrefab: {fileID: 0}
   zombieEMPToPool: 0
-  zombieBossObjects: []
+  Object3: []
   zombieBossPrefab: {fileID: 0}
   zombieBossToPool: 0
-  zombieGasObjects: []
-  zombieGasPrefab: {fileID: 0}
-  zombieGasToPool: 0
+  pipeBulletObjects: []
+  zombieGasPrefab: {fileID: 2417314567440610563, guid: 690c99d5f79fcf9408225bfb2d33ff47,
+    type: 3}
+  zombieGasToPool: 20
   bulletObjects: []
   bulletPrefab: {fileID: 4981160916185183881, guid: a69176785cd6aed4080004c720958638,
     type: 3}

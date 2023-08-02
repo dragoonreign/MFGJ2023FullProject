@@ -10533,25 +10533,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 140577103}
     m_Modifications:
-    - target: {fileID: 1854447371022072374, guid: b4da11abd7396fd4eb60d843fc5d2eca,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e2919cbc0b3721c469f4a3be8156c3d2, type: 2}
     - target: {fileID: 4814831037618053661, guid: b4da11abd7396fd4eb60d843fc5d2eca,
         type: 3}
       propertyPath: m_Name
       value: igloo Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 5303665847641815207, guid: b4da11abd7396fd4eb60d843fc5d2eca,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.3466761
-      objectReference: {fileID: 0}
-    - target: {fileID: 5303665847641815207, guid: b4da11abd7396fd4eb60d843fc5d2eca,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.3466761
       objectReference: {fileID: 0}
     - target: {fileID: 5303665847641815207, guid: b4da11abd7396fd4eb60d843fc5d2eca,
         type: 3}
@@ -10604,8 +10589,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 3940633278674581594, guid: b4da11abd7396fd4eb60d843fc5d2eca, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4da11abd7396fd4eb60d843fc5d2eca, type: 3}
@@ -21059,7 +21043,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 5161322894634194256, guid: e256db36362fd114686bce58f4159cf7,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: f7ca7d32a758c9b4898fff192a7ce5b7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3d97aa12bd9ad0c4f9c16df568ff67af, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
