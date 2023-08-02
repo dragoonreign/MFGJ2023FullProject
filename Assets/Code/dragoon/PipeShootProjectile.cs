@@ -6,6 +6,7 @@ public class PipeShootProjectile : MonoBehaviour
 {
     [SerializeField] private GameObject GunPoint;
     bool bCanShootBullet = true;
+    public float bulletShotCooldownInSeconds = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +42,7 @@ public class PipeShootProjectile : MonoBehaviour
     {
         bCanShootBullet = false;
         //yield on a new YieldInstruction that waits for 5 seconds.
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(bulletShotCooldownInSeconds);
         DoShoot();
         bCanShootBullet = true;
     }

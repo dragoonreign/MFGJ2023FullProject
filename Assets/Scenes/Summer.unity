@@ -3197,6 +3197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GunPoint: {fileID: 1718237855}
+  bulletShotCooldownInSeconds: 1
 --- !u!4 &223387810
 Transform:
   m_ObjectHideFlags: 0
@@ -19387,6 +19388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GunPoint: {fileID: 2052179809}
+  bulletShotCooldownInSeconds: 1
 --- !u!4 &1388782289
 Transform:
   m_ObjectHideFlags: 0

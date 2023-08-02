@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Summer.unity
     guid: e5946751d7615f94188eff36e76dc1d3
   - enabled: 1
-    path: Assets/Scenes/Archived/Fall.unity
+    path: Assets/Scenes/Fall.unity
     guid: 2a01761fdc66db749b8501e3c5f471bc
   - enabled: 1
     path: Assets/Scenes/KeekSummerStage.unity
