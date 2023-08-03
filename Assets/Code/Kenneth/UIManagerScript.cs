@@ -178,7 +178,9 @@ public class UIManagerScript : MonoBehaviour
             {
                 Debug.Log("Out of Time Sucka!");
 
-                _player.gameObject.SetActive(false);
+                // _player.gameObject.SetActive(false);
+                DoDisablePlayerInput();
+                GameManager.instance.DoGameOver();
                 _timeRemaining = 0;
                 _timerIsRunning = false;
                 GameOverSequence();
@@ -189,5 +191,10 @@ public class UIManagerScript : MonoBehaviour
         {
             _timeRemaining += Time.deltaTime;
         }
+    }
+
+    public void DoDisablePlayerInput()
+    {
+        _player.gameObject.GetComponent<PlayerController>().enabled = false;
     }
 }
