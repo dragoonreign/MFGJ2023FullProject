@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
 
     public UIManagerScript _uiManager;
 
-    public GameManager _gameManager;
+    // public GameManager _gameManager;
 
     private bool _gameIsOver;
     // Start is called before the first frame update
@@ -35,7 +35,9 @@ public class PlayerHealth : MonoBehaviour
 
         if (health < 1)
         {
-            Destroy(gameObject);
+            GameManager.instance.DoGameOver();
+            _uiManager.GameOverSequence();
+            // Destroy(gameObject);
         }
 
     }

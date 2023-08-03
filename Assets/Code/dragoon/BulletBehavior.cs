@@ -37,6 +37,7 @@ public class BulletBehavior : MonoBehaviour
         {
             if (other.transform.gameObject.tag == "Enemy")
             {
+                Debug.Log("Hit");
                 other.transform.gameObject.SetActive(false);
             }
         }

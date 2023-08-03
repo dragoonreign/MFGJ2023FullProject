@@ -227,7 +227,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 111621090603486873}
   m_Layer: 0
   m_Name: EnemyAI
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -309,6 +309,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EnemyCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 318718052382881564, guid: 85ecf49e597c70149b2f5ba212916816,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2895613590625809339, guid: 85ecf49e597c70149b2f5ba212916816,
         type: 3}

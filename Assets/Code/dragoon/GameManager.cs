@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private MyDefaultInputAction myDefaultInputAction;
     [SerializeField] private InputAction m_reset;
     public PlayerInput m_PlayerInput;
+    public GameObject _player;
 
     public bool _isGameOver;
 
@@ -49,11 +50,17 @@ public class GameManager : MonoBehaviour
     public void DoGameOver()
     {
         _isGameOver = true;
+        DoDisablePlayerInput();
     }
 
     public void DoResetLevel()
     {
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
+    }
+
+    public void DoDisablePlayerInput()
+    {
+        _player.gameObject.GetComponent<PlayerController>().enabled = false;
     }
 }
