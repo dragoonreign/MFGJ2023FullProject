@@ -9410,6 +9410,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerVC2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5771269048906575371, guid: 5a29305377f7c434c950b5ac5cac13ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8517021846079494098, guid: 5a29305377f7c434c950b5ac5cac13ce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22714,7 +22719,7 @@ PrefabInstance:
     - target: {fileID: 4886082267183028647, guid: 5a29305377f7c434c950b5ac5cac13ce,
         type: 3}
       propertyPath: m_Lens.NearClipPlane
-      value: -1000
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 5771269048906575371, guid: 5a29305377f7c434c950b5ac5cac13ce,
         type: 3}
@@ -23437,6 +23442,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerVC2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5771269048906575371, guid: 5a29305377f7c434c950b5ac5cac13ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8517021846079494098, guid: 5a29305377f7c434c950b5ac5cac13ce,
         type: 3}
@@ -60764,7 +60774,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: -1000
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -84466,7 +84476,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
