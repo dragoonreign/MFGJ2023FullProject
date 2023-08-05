@@ -23185,6 +23185,11 @@ PrefabInstance:
       propertyPath: _player
       value: 
       objectReference: {fileID: 1289967022}
+    - target: {fileID: 2014412078082115488, guid: 5d5e977abecb1ba408e9019c57734d0d,
+        type: 3}
+      propertyPath: _timeRemaining
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 3242913686264693819, guid: 5d5e977abecb1ba408e9019c57734d0d,
         type: 3}
       propertyPath: m_fontColor.b
@@ -32503,6 +32508,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2096268153244715767, guid: 621476b815369e34c84c46558d59d772,
+        type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1289967022}
     - target: {fileID: 4425067198328427591, guid: 621476b815369e34c84c46558d59d772,
         type: 3}
       propertyPath: m_LocalPosition.x

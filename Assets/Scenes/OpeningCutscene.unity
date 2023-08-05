@@ -579,7 +579,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1263075221}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 179f9baf50c19fd4892271a5079c17e1, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 7ad34cb2409a82c41a4ed4038d6b2e67, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -594,6 +594,30 @@ PlayableDirector:
   - key: {fileID: 1666120381640969655, guid: 179f9baf50c19fd4892271a5079c17e1, type: 2}
     value: {fileID: 348637037}
   - key: {fileID: -7031143569113371395, guid: 179f9baf50c19fd4892271a5079c17e1, type: 2}
+    value: {fileID: 1424244730}
+  - key: {fileID: 4570318859123947477, guid: 179f9baf50c19fd4892271a5079c17e1, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4578142514215046709, guid: 179f9baf50c19fd4892271a5079c17e1, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -7275387887991814, guid: 179f9baf50c19fd4892271a5079c17e1, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -7420601782712161926, guid: 179f9baf50c19fd4892271a5079c17e1, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -5186445355302039519, guid: 179f9baf50c19fd4892271a5079c17e1, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -7792372094183578121, guid: 179f9baf50c19fd4892271a5079c17e1, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -747486186657418299, guid: 179f9baf50c19fd4892271a5079c17e1, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -5735292301767572968, guid: 7ad34cb2409a82c41a4ed4038d6b2e67, type: 2}
+    value: {fileID: 580791451}
+  - key: {fileID: -4983206667408446779, guid: 7ad34cb2409a82c41a4ed4038d6b2e67, type: 2}
+    value: {fileID: 1419742473}
+  - key: {fileID: 7641559755384268875, guid: 7ad34cb2409a82c41a4ed4038d6b2e67, type: 2}
+    value: {fileID: 1781911435}
+  - key: {fileID: 1666120381640969655, guid: 7ad34cb2409a82c41a4ed4038d6b2e67, type: 2}
+    value: {fileID: 348637037}
+  - key: {fileID: 4570318859123947477, guid: 7ad34cb2409a82c41a4ed4038d6b2e67, type: 2}
     value: {fileID: 1424244730}
   m_ExposedReferences:
     m_References: []
@@ -1112,7 +1136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1809599287
 RectTransform:
   m_ObjectHideFlags: 0
