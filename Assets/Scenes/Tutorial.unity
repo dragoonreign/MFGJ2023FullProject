@@ -773,6 +773,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyBullet(Clone)
       objectReference: {fileID: 0}
+    - target: {fileID: 2417314567440610563, guid: 690c99d5f79fcf9408225bfb2d33ff47,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8493896788318620921, guid: 690c99d5f79fcf9408225bfb2d33ff47,
         type: 3}
       propertyPath: m_LocalPosition.x
