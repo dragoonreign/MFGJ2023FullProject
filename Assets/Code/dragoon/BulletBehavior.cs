@@ -47,9 +47,10 @@ public class BulletBehavior : MonoBehaviour
             if (other.transform.gameObject.tag == "Player")
             {
                 Debug.Log("Hit");
+                other.transform.gameObject.GetComponent<PlayerHealth>().Damage();
                 transform.gameObject.SetActive(false);
                 transform.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-                _UIManagerScript.UpdateHealth(1);
+                // _UIManagerScript.UpdateHealth(1);
             }
         }
     }
