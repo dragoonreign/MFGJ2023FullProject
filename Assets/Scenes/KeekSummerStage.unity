@@ -28672,7 +28672,7 @@ PrefabInstance:
     - target: {fileID: 2014412078082115488, guid: 5d5e977abecb1ba408e9019c57734d0d,
         type: 3}
       propertyPath: _timeRemaining
-      value: 500
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 6389620181623360425, guid: 5d5e977abecb1ba408e9019c57734d0d,
         type: 3}
