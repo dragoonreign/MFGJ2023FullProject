@@ -2671,7 +2671,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "www.kenney.nl\nPrecisionZ10\nStevieMeeks\r\nLinkocomic\r\ndraigard\r\ndraigard\r\ndragoonreign\nKennyMcLachlan\nStarsofCurtains\ndragoonreign
+  m_text: "www.kenney.nl\nPrecisionZ10\nStevieMeeks\r\nLinkocomic\r\ndraigard\r\ndraigard\r\ndragoonreign\nKennyMcLachlan\ndragoonreign
     \nKennyMcLachlan"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5034,7 +5034,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The Polar Bear is sad with a Ball and chain on his ankle.
+  m_text: 'The Polar Bear is sad with a ball and chain on his ankle.
 
 '
   m_isRightToLeft: 0
